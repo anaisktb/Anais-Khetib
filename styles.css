@@ -1,0 +1,453 @@
+/* Style de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #000000;
+    background-color: #AFEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Page d'accueil - styles */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('1.jpg'); /* Remplace 'background.jpg' par le nom de ton image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: ##AFEEEE;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.hero-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-nav a {
+    padding: 12px 20px;
+    color: #fff;
+    background-color: rgba(74, 144, 226, 0.8);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.hero-nav a:hover {
+    background-color: rgba(74, 144, 226, 1);
+}
+
+/* Style des sections */
+section {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2em;
+    color: #4a90e2;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 5px;
+}
+
+/* Section À propos */
+#a-propos {
+    position: relative;
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+#a-propos .contenu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+#à-propos .photo-container {
+    flex-shrink: 0; /* Empêche le conteneur de s'étirer */
+    max-width: 100px; /* Limite la largeur maximale du conteneur */
+}
+
+#à-propos .photo-container img {
+    max-width: 100%; /* Limite la largeur de l'image à celle du conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+    border-radius: 50%; /* Garde l'image circulaire */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optionnel, pour l'esthétique */
+    display: block; /* Évite tout comportement d'élément inline */
+}
+
+
+
+#a-propos .contact-info {
+    color: #666;
+    font-size: 0.9em;
+}
+
+#a-propos h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#a-propos p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Section Projets */
+#projet .title{
+     color:#FFFFFF
+} 
+.projet-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projet-item {
+    flex: 1 1 calc(50% - 10px);
+    text-align: center;
+    padding: 10px;
+}
+
+.projet-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.projet-item h3 {
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+/* Engagements, expériences, loisirs */
+.loisir-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.loisir-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+/* Section Expériences et Engagements */
+/* Section exp-eng */
+/* Section exp-eng */
+/* Section exp-eng */
+#exp-eng {
+    background-color: #FAF9F6;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#exp-eng h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Sous-titres pour les deux sections */
+#exp-eng h3 {
+    font-size: 2em;
+    color: #40E0D0;
+    margin: 20px 0 30px;
+    text-align: left;
+    border-bottom: 2px solid #40E0D0;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Style pour chaque expérience ou engagement */
+.exp-eng-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffffff, #e8f1fc);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exp-eng-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour les images */
+.exp-eng-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    border: 5px solid #fff;
+}
+
+/* Contenu des cartes */
+.exp-eng-content {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.exp-eng-item h4 {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.exp-eng-item p {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* Style des apports */
+/* Partie des expériences professionnelles et engagements étudiants */
+#exp-eng .impact {
+    color: #40E0D0 !important; /* Ajoute !important pour forcer l'application de cette règle */
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 10px;
+    font-style: italic;
+    padding: 5px 0;
+}
+
+
+
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 768px) {
+    .exp-eng-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .exp-eng-item img {
+        margin: 0 auto 20px;
+    }
+
+    .exp-eng-content {
+        text-align: center;
+    }
+}
+
+
+/* Section CV */
+#cv {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Couleur de fond */
+    text-align: center;
+}
+
+#cv h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#cv iframe {
+    width: 100%;
+    height: 80%; /* Ajuste la hauteur de l'iframe */
+    border: none;
+}
+
+/* Appliquer uniquement aux pages avec la classe .entretiens-page */
+.entretiens-page {
+    background-color: #40E0D0; /* Bleu turquoise */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff; /* Texte par défaut blanc */
+    min-height: 100vh;
+}
+
+/* En-tête spécifique à cette page */
+.entretiens-page .header-entretien {
+    text-align: center;
+    background-color: #20B2AA; /* Turquoise légèrement plus foncé */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.entretiens-page .header-image {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 4px solid #008080; /* Bordure turquoise foncé */
+}
+
+.entretiens-page .header-entretien h1 {
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
+/* Conteneur principal */
+.entretiens-page .entretiens {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fond blanc pour le contenu */
+    color: #333; /* Texte sombre */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Bloc pour chaque entretien */
+.entretiens-page .entretien {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.entretiens-page .entretien:last-child {
+    border-bottom: none;
+}
+
+.entretiens-page .entretien h2 {
+    font-size: 1.8em;
+    color: #20B2AA; /* Turquoise pour les titres */
+    margin-bottom: 10px;
+}
+
+.entretiens-page .entretien p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.entretiens-page .entretien-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* Style de la page des entretiens */
+.entretiens-page {
+    background-color: #009B8E; /* Bleu turquoise */
+    padding: 30px;
+    color: white;
+}
+
+/* Style des entretiens */
+.entretiens-page .entretien {
+    margin-bottom: 40px;  /* Espacement entre les entretiens */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond légèrement transparent */
+    border-radius: 8px;
+}
+
+/* Image des entretiens */
+.entretiens-page .entretien-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;  /* Ajoute de l'espace sous l'image */
+}
+
+/* Texte des entretiens */
+.entretiens-page .entretien-text {
+    margin-top: 20px;  /* Espacement avant le texte */
+    line-height: 1.6;
+}
+
+/* Titres des entretiens */
+.entretiens-page .entretien h2 {
+    margin-bottom: 10px;
+    color: #FFB81C; /* Couleur du titre */
+}
+
+/* Ligne de séparation entre les entretiens */
+.entretiens-page .entretien + .entretien {
+    border-top: 2px solid #FFB81C; /* Ligne orange entre les entretiens */
+    padding-top: 20px;  /* Espace après la ligne */
+}
+
+
+
+
+
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #777;
+    background-color: #f1f1f1;
+    width: 100%;
+    margin-top: 20px;
+}
